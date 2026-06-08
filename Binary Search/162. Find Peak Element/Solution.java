@@ -1,25 +1,16 @@
 class Solution {
-    public int searchInsert(int[] nums, int target) {
+    public int findPeakElement(int[] nums) {
         
-        int s = 0, e = nums.length - 1;
-        int mid = -1;
-        while(s<=e)
+        int s = 0, e = nums.length-1;
+        while(s<e)
         {
-            mid = s+(e-s)/2;
-            if(target>nums[mid])
-            {
-                s=mid+1;
-            }
-            else if(target<nums[mid])
-            {
-                 e=mid-1;
-            }
-            else 
-                return mid;
+            int mid = s+(e-s)/2;
+
+            if(nums[mid]<nums[mid+1])
+                s = mid+1;
+            else
+                e = mid;
         }
-        
-        if(target>nums[mid])
-            return s;
-        return mid;
+        return s;
     }
 }
