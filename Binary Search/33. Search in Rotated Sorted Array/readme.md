@@ -40,4 +40,6 @@ This question is related to:
 
 **81. Search in Rotated Sorted Array II**
 
-Link: https://github.com/NIJOY-P-JOSE/DSA/edit/main/Binary%20Search/81.%20Search%20in%20Rotated%20Sorted%20Array%20II/
+Link: 
+[https://github.com/NIJOY-P-JOSE/DSA/edit/main/Binary%20Search/81.%20Search%20in%20Rotated%20Sorted%20Array%20II/
+](https://github.com/NIJOY-P-JOSE/DSA/tree/main/Binary%20Search/81.%20Search%20in%20Rotated%20Sorted%20Array%20II)
