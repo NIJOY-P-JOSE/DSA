@@ -1,4 +1,4 @@
-# 🔍 2D Matrix Binary Search (Custom Approach)
+# 🔍 2D Matrix Binary Search That Like A 1D Sorted Array 
 
 This repository contains my custom implementation of searching an element in a **fully sorted 2D matrix** using a modified binary search approach.
 
