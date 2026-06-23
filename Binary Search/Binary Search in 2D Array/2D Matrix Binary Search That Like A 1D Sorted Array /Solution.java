@@ -21,7 +21,6 @@ class Main {
         int cmid =col/2;
         int rs = 0, re = row;
         
-        
         while(rs<re-1)
         {
             int rmid = rs+(re-rs)/2;
