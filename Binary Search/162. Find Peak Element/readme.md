@@ -1,32 +1,128 @@
 # 162. Find Peak Element
-Medium
-Topics
-premium lock icon
-Companies
-A peak element is an element that is strictly greater than its neighbors.
 
-Given a 0-indexed integer array nums, find a peak element, and return its index. If the array contains multiple peaks, return the index to any of the peaks.
+This repository contains a Java solution for the **Find Peak Element** problem using **Binary Search**.
 
-You may imagine that nums[-1] = nums[n] = -∞. In other words, an element is always considered to be strictly greater than a neighbor that is outside the array.
+## 📌 Problem Statement
 
-You must write an algorithm that runs in O(log n) time.
+Given an integer array `nums`, find the index of **any peak element**.
 
- 
+A peak element is an element that is **strictly greater than its adjacent elements**.
 
-Example 1:
+The array satisfies:
 
-Input: nums = [1,2,3,1]
-Output: 2
-Explanation: 3 is a peak element and your function should return the index number 2.
-Example 2:
+* `nums[i] != nums[i + 1]`
+* `nums[-1] = nums[n] = -∞`
 
-Input: nums = [1,2,1,3,5,6,4]
-Output: 5
-Explanation: Your function can return either index number 1 where the peak element is 2, or index number 5 where the peak element is 6.
- 
+The required time complexity is **O(log n)**.
 
-Constraints:
+### Example
 
-1 <= nums.length <= 1000
--231 <= nums[i] <= 231 - 1
-nums[i] != nums[i + 1] for all valid i.
+```text
+Input:
+[1,2,3,1]
+
+Output:
+2
+
+Explanation:
+3 is greater than both of its neighbours.
+```
+
+---
+
+## 💡 Approach
+
+Instead of checking every element, Binary Search is used.
+
+At every iteration:
+
+* Compare `nums[mid]` with `nums[mid + 1]`.
+* If `nums[mid] < nums[mid + 1]`, the array is ascending at `mid`, so **a peak must exist on the right side**.
+* Otherwise, the array is descending or already at a peak, so **a peak lies on the left side (including `mid`)**.
+
+The search space is reduced by half in every iteration until only one element remains.
+
+---
+
+## 🧠 Key Observation
+
+There is **always at least one peak** in the array.
+
+* If we move upward (`nums[mid] < nums[mid + 1]`), we are guaranteed to eventually reach a peak.
+* If we move downward (`nums[mid] > nums[mid + 1]`), a peak already exists on the current side.
+
+This property allows Binary Search to work without explicitly checking both neighbours.
+
+---
+
+## 🔄 Algorithm
+
+1. Initialize `start = 0` and `end = n - 1`.
+2. While `start < end`:
+
+   * Compute `mid`.
+   * If `nums[mid] < nums[mid + 1]`
+
+     * Search the right half.
+   * Else
+
+     * Search the left half including `mid`.
+3. When `start == end`, it points to a peak element.
+4. Return the index.
+
+---
+
+## ⏱️ Complexity Analysis
+
+* **Time Complexity:** `O(log n)`
+* **Space Complexity:** `O(1)`
+
+---
+
+## 💻 Java Solution
+
+```java
+class Solution {
+    public int findPeakElement(int[] nums) {
+
+        int s = 0, e = nums.length - 1;
+
+        while (s < e) {
+            int mid = s + (e - s) / 2;
+
+            if (nums[mid] < nums[mid + 1])
+                s = mid + 1;
+            else
+                e = mid;
+        }
+
+        return s;
+    }
+}
+```
+
+---
+
+## 🎯 Binary Search Pattern Used
+
+This problem follows the **Peak Finding Binary Search** pattern.
+
+Instead of searching for a specific value, Binary Search is used to locate a position where the slope changes from increasing to decreasing.
+
+---
+
+## 📚 Concepts Practiced
+
+* Binary Search
+* Peak Finding
+* Divide and Conquer
+* Search Space Reduction
+* Interview Pattern Recognition
+
+---
+
+## 🚀 Author
+
+**Nijoy P Jose**
+
+This solution is part of my **Data Structures & Algorithms** placement preparation repository, where I implement and document different Binary Search patterns in Java.
