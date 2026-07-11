@@ -1,4 +1,4 @@
- 832. Flipping an Image
+# 832. Flipping an Image
 
 ## Problem
 Given an `n x n` binary matrix `image`, perform the following two operations:
