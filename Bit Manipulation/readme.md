@@ -435,32 +435,32 @@ Used for
 
 ## Easy
 
-- 136. Single Number
-- 191. Number of 1 Bits
-- 338. Counting Bits
-- 231. Power of Two
-- 190. Reverse Bits
-- 476. Number Complement
-- 832. Flipping an Image
+- **136.** Single Number
+- **191.** Number of 1 Bits
+- **338.** Counting Bits
+- **231.** Power of Two
+- **190.** Reverse Bits
+- **476.** Number Complement
+- **832.** Flipping an Image
 
 ---
 
 ## Medium
 
-- 137. Single Number II
-- 260. Single Number III
-- 78. Subsets
-- 89. Gray Code
-- 201. Bitwise AND of Numbers Range
+- **137.** Single Number II
+- **260.** Single Number III
+- **78.** Subsets
+- **89.** Gray Code
+- **201.** Bitwise AND of Numbers Range
 
 ---
 
 ## Hard
 
-- Maximum XOR of Two Numbers
-- Trie + XOR
-- DP + Bitmask
-- Traveling Salesman (Bitmask DP)
+- **421.** Maximum XOR of Two Numbers in an Array
+- **Trie + XOR**
+- **DP + Bitmask**
+- **Traveling Salesman (Bitmask DP)**
 
 ---
 
