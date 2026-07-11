@@ -1,4 +1,4 @@
-# Bit Manipulation - Interview Revision Notes
+# Bit Manipulation 
 
 > A quick revision guide for coding interviews (Google, Amazon, Microsoft, Adobe, Atlassian, TCS Digital, etc.)
 
