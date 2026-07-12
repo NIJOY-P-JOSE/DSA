@@ -1,4 +1,5 @@
 # Sieve of Eratosthenes
+# Find All Prime Numbers Up to N
 
 ## Problem
 Given a number `n`, print all prime numbers from `2` to `n`.
