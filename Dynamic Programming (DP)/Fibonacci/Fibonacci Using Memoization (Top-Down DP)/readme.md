@@ -1,6 +1,4 @@
-These are a bit more detailed while still being concise enough for a GitHub README and interview revision.
 
----
 
 # 📄 Fibonacci Using Memoization (Top-Down DP)
 
