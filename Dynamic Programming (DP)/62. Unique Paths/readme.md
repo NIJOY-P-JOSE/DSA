@@ -18,6 +18,8 @@ Find the **total number of unique paths** from the start to the destination.
 
 ---
 
+<img width="400" height="183" alt="robot_maze" src="https://github.com/user-attachments/assets/7b46fb1a-5bc0-483e-9716-5e1df24a5b8b" />
+
 ## Example
 
 Input
