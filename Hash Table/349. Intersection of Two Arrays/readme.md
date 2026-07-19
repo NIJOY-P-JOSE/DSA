@@ -1,4 +1,4 @@
-# 349 Intersection of Two Arrays using HashSet
+# 349. Intersection of Two Arrays using HashSet
 
 This repository contains a Java solution for **LeetCode 349 - Intersection of Two Arrays** using the **HashSet** data structure.
 
