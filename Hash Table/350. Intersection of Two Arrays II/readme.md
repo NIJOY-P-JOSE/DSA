@@ -1,4 +1,4 @@
-# 🔗 Intersection of Two Arrays II using HashMap
+# 350. Intersection of Two Arrays II using HashMap
 
 This repository contains a Java solution for **LeetCode 350 - Intersection of Two Arrays II** using the **HashMap** data structure.
 
