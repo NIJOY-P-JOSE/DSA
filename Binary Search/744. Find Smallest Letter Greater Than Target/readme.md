@@ -1,4 +1,4 @@
-# 🔍 Find Smallest Letter Greater Than Target (Binary Search)
+# 744. 🔍 Find Smallest Letter Greater Than Target (Binary Search)
 
 This repository contains a Java solution for **LeetCode 744 - Find Smallest Letter Greater Than Target** using **Binary Search**.
 
