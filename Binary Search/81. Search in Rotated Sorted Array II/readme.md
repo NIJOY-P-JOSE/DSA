@@ -1,4 +1,4 @@
-# 🔄 Search in Rotated Sorted Array II (Binary Search)
+# 81. 🔄 Search in Rotated Sorted Array II (Binary Search)
 
 This repository contains a Java solution for **LeetCode 81 - Search in Rotated Sorted Array II** using **Binary Search**.
 
