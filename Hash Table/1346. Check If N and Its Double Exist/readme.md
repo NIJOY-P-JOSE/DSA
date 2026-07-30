@@ -1,4 +1,4 @@
-# 🔍 Check If N and Its Double Exist (Hash Table)
+# 1346. 🔍 Check If N and Its Double Exist (Hash Table)
 
 This repository contains a Java solution for **LeetCode 1346 - Check If N and Its Double Exist** using a **HashSet**.
 
