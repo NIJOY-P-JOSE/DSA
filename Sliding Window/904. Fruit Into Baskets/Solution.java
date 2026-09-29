@@ -1,16 +1,16 @@
 class Solution { 
     public int totalFruit(int[] fruits) { 
-        HashMap<Integer,Integer> set = new HashMap<>(); 
+        HashMap<Integer,Integer> count = new HashMap<>(); 
         int left = 0, maxBox = 0; 
  
         for(int right = 0;right<fruits.length;right++){ 
-            set.put(fruits[right],set.getOrDefault(fruits[right],0)+1); 
+            count.put(fruits[right],count.getOrDefault(fruits[right],0)+1); 
  
-            while(set.size()>2){ 
-                set.put(fruits[left],set.get(fruits[left])-1); 
+            while(count.size()>2){ 
+                count.put(fruits[left],count.get(fruits[left])-1); 
 
-                if(set.get(fruits[left])==0) 
-                    set.remove(fruits[left]); 
+                if(count.get(fruits[left])==0) 
+                    count.remove(fruits[left]); 
 
                 left++; 
             } 
